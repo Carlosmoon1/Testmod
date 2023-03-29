@@ -11,10 +11,10 @@ import net.prayforwaifu.testmod.TestMod;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, TestMod.MOD_ID);
 
-    public static final RegistryObject<Item> SUNSTONE = ITEMS.register("sunstone",
+    public static final RegistryObject<Item> SUNSTONE_INGOT = ITEMS.register("sunstone_ingot",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TEST_MOD)));
 
-    public static final RegistryObject<Item> MOONSTONE = ITEMS.register("moonstone",
+    public static final RegistryObject<Item> RAW_SUNSTONE = ITEMS.register("raw_sunstone",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TEST_MOD)));
 
     public static void register(IEventBus eventBus){

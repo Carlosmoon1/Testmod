@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "testmod:item/sunstone"
+    "layer0": "testmod:item/raw_sunstone"
   }
 }

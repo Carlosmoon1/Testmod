@@ -1,7 +1,9 @@
 {
-  "item.testmod.sunstone": "Sunstone",
-  "item.testmod.moonstone": "Moonstone",
+  "item.testmod.sunstone_ingot": "Sunstone ingot",
+  "item.testmod.raw_sunstone": "Raw sunstone",
 
-  "itemGroup.testmod": "TESTMOD_TAB",
-  "block.testmod.sunstone_block": "Sunstone block"
+  "itemGroup.testmod": "SUNSTONE",
+  "block.testmod.sunstone_block": "Sunstone block",
+  "block.testmod.sunstone_ore": "Sunstone ore",
+  "block.testmod.deepslate_sunstone_ore": "Deepslate sunstone ore"
 }

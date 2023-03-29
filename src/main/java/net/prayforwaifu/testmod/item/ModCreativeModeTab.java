@@ -7,7 +7,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab TEST_MOD = new CreativeModeTab("testmod") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.SUNSTONE.get());
+            return new ItemStack(ModItems.RAW_SUNSTONE.get());
         };
     };
 }
