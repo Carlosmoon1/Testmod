@@ -12,10 +12,10 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, TestMod.MOD_ID);
 
     public static final RegistryObject<Item> SUNSTONE = ITEMS.register("sunstone",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TEST_MOD)));
 
     public static final RegistryObject<Item> MOONSTONE = ITEMS.register("moonstone",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TEST_MOD)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

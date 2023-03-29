@@ -1,4 +1,7 @@
 {
   "item.testmod.sunstone": "Sunstone",
-  "item.testmod.moonstone": "Moonstone"
+  "item.testmod.moonstone": "Moonstone",
+
+  "itemGroup.testmod": "TESTMOD_TAB",
+  "block.testmod.sunstone_block": "Sunstone block"
 }
