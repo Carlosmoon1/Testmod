@@ -26,8 +26,8 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, TestMod.MOD_ID);
 
     public static final RegistryObject<Block> SUNSTONE_BLOCK = registryBlock("sunstone_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(4f)
-                    .requiresCorrectToolForDrops())
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(1f,1200f)
+                    .requiresCorrectToolForDrops().lightLevel((state) -> 10))
             , ModCreativeModeTab.TEST_MOD);
 
     public static final RegistryObject<Block> SUNSTONE_ORE = registryBlock("sunstone_ore",
@@ -36,8 +36,8 @@ public class ModBlocks {
             , ModCreativeModeTab.TEST_MOD);
 
     public static final RegistryObject<Block> DEEPSLATE_SUNSTONE_ORE = registryBlock("deepslate_sunstone_ore",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(4f)
-                    .requiresCorrectToolForDrops(), UniformInt.of(3,7))
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(1f, 1f)
+                    .requiresCorrectToolForDrops().lightLevel((state) -> 4), UniformInt.of(3,7))
             , ModCreativeModeTab.TEST_MOD);
 
 

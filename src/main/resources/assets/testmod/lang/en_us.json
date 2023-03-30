@@ -1,6 +1,7 @@
 {
   "item.testmod.sunstone_ingot": "Sunstone ingot",
   "item.testmod.raw_sunstone": "Raw sunstone",
+  "item.testmod.sunstone_gem": "Sunstone gem",
 
   "itemGroup.testmod": "SUNSTONE",
   "block.testmod.sunstone_block": "Sunstone block",
