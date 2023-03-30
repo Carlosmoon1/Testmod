@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "testmod:sunstone_ore",
+    "testmod:sunstone_block"
+  ]
+}

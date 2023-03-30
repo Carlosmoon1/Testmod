@@ -31,8 +31,8 @@ public class ModBlocks {
             , ModCreativeModeTab.TEST_MOD);
 
     public static final RegistryObject<Block> SUNSTONE_ORE = registryBlock("sunstone_ore",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(4f)
-                    .requiresCorrectToolForDrops(), UniformInt.of(3,7))
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(1f,1f)
+                    .requiresCorrectToolForDrops().lightLevel((state) -> 4), UniformInt.of(3,7))
             , ModCreativeModeTab.TEST_MOD);
 
     public static final RegistryObject<Block> DEEPSLATE_SUNSTONE_ORE = registryBlock("deepslate_sunstone_ore",
