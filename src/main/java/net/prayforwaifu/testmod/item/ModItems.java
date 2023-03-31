@@ -19,7 +19,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TEST_MOD)));
 
     public static final RegistryObject<Item> SUNSTONE_GEM = ITEMS.register("sunstone_gem",
-            () -> new SunstoneGemItem(new Item.Properties().tab(ModCreativeModeTab.TEST_MOD).stacksTo(1)));
+            () -> new SunstoneGemItem(new Item.Properties().tab(ModCreativeModeTab.TEST_MOD)
+                    .stacksTo(1).durability(25)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

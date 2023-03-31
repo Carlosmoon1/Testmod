@@ -18,10 +18,14 @@ public class SunstoneGemItem extends Item {
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         if (!level.isClientSide && hand == InteractionHand.MAIN_HAND){
-            // gives nightvision
-            // has 2 min cooldown
+            // Gives nightvision
+            // Has 2 min cooldown
+            // durability -1
             PlayerNightvision(player);
             player.getCooldowns().addCooldown(this, 2400);
+            ItemStack stack = player.getItemInHand(hand);
+            stack.setDamageValue(stack.getDamageValue() + 1);
+            if (stack.getDamageValue() >= stack.getMaxDamage()) stack.setCount(0);
         }
         return super.use(level, player, hand);
     }
