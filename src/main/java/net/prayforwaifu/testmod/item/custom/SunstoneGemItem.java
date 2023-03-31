@@ -21,13 +21,13 @@ public class SunstoneGemItem extends Item {
             // gives nightvision
             // has 2 min cooldown
             PlayerNightvision(player);
-            player.getCooldowns().addCooldown(this, 600);
+            player.getCooldowns().addCooldown(this, 2400);
         }
         return super.use(level, player, hand);
     }
 
     private void PlayerNightvision (Player player){
-        player.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 300,1));
+        player.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 1200,1));
 
     }
 }

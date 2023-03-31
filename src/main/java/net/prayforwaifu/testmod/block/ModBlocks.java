@@ -15,6 +15,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.RegistryObject;
 import net.prayforwaifu.testmod.TestMod;
+import net.prayforwaifu.testmod.block.custom.Sunstoneblock;
 import net.prayforwaifu.testmod.item.ModCreativeModeTab;
 import net.prayforwaifu.testmod.item.ModItems;
 
@@ -26,7 +27,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, TestMod.MOD_ID);
 
     public static final RegistryObject<Block> SUNSTONE_BLOCK = registryBlock("sunstone_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(1f,1200f)
+            () -> new Sunstoneblock(BlockBehaviour.Properties.of(Material.STONE).strength(1f,1200f)
                     .requiresCorrectToolForDrops().lightLevel((state) -> 10))
             , ModCreativeModeTab.TEST_MOD);
 
