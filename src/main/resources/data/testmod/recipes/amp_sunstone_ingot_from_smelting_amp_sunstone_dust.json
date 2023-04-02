@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 1,
+  "group": "sunstone",
+  "ingredient": {
+    "item": "testmod:amp_sunstone_dust"
+  },
+  "result": "testmod:amp_sunstone_ingot"
+
+}

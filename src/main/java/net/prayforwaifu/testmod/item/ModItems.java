@@ -18,6 +18,18 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_SUNSTONE = ITEMS.register("raw_sunstone",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TEST_MOD)));
 
+    public static final RegistryObject<Item> GOLD_DUST = ITEMS.register("gold_dust",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TEST_MOD)));
+
+    public static final RegistryObject<Item> SUNSTNONE_DUST = ITEMS.register("sunstone_dust",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TEST_MOD)));
+
+    public static final RegistryObject<Item> AMP_SUNSTONE_DUST = ITEMS.register("amp_sunstone_dust",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TEST_MOD)));
+
+    public static final RegistryObject<Item> AMP_SUNSTONE_ÍNGOT = ITEMS.register("amp_sunstone_ingot",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TEST_MOD)));
+
     public static final RegistryObject<Item> SUNSTONE_GEM = ITEMS.register("sunstone_gem",
             () -> new SunstoneGemItem(new Item.Properties().tab(ModCreativeModeTab.TEST_MOD)
                     .stacksTo(1).durability(25)));
