@@ -11,7 +11,6 @@ public class RawSunstone extends Item {
 
     @Override
     public InteractionResult useOn(UseOnContext useOnContext) {
-       if ()
 
 
        return super.useOn(useOnContext);
