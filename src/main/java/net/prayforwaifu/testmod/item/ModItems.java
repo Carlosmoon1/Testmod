@@ -34,6 +34,10 @@ public class ModItems {
             () -> new SunstoneGemItem(new Item.Properties().tab(ModCreativeModeTab.TEST_MOD)
                     .stacksTo(1).durability(25)));
 
+    public static final RegistryObject<Item> SHINING_SUNSTONE_GEM = ITEMS.register("shining_sunstone_gem",
+            () -> new SunstoneGemItem(new Item.Properties().tab(ModCreativeModeTab.TEST_MOD)
+                    .stacksTo(1).durability(25)));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
