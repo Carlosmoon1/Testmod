@@ -6,9 +6,11 @@
   "item.testmod.gold_dust": "Gold dust",
   "item.testmod.amp_sunstone_dust": "Amplified sunstone dust",
   "item.testmod.amp_sunstone_ingot": "Amplified sunstone ingot",
+  "item.testmod.fruit": "Fruit",
 
   "itemGroup.testmod": "SUNSTONE",
   "block.testmod.sunstone_block": "Sunstone block",
   "block.testmod.sunstone_ore": "Sunstone ore",
-  "block.testmod.deepslate_sunstone_ore": "Deepslate sunstone ore"
+  "block.testmod.deepslate_sunstone_ore": "Deepslate sunstone ore",
+  "block.testmod.sunstone_lamp": "Sunstone lamp"
 }

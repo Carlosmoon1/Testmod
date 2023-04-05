@@ -1,5 +1,8 @@
 package net.prayforwaifu.testmod.item;
 
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -33,6 +36,16 @@ public class ModItems {
     public static final RegistryObject<Item> SUNSTONE_GEM = ITEMS.register("sunstone_gem",
             () -> new SunstoneGemItem(new Item.Properties().tab(ModCreativeModeTab.TEST_MOD)
                     .stacksTo(1).durability(25)));
+
+    public static final RegistryObject<Item> SHINING_SUNSTONE_GEM = ITEMS.register("shining_sunstone_gem",
+            () -> new SunstoneGemItem(new Item.Properties().tab(ModCreativeModeTab.TEST_MOD)
+                    .stacksTo(1).durability(25)));
+
+    public static final RegistryObject<Item> FRUIT = ITEMS.register("fruit",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TEST_MOD).food(new FoodProperties.Builder()
+                    .nutrition(4).saturationMod(2)
+                    .effect( () -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200,0),1)
+                    .alwaysEat().build())));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

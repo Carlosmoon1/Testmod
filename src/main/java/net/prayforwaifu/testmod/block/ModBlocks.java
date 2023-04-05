@@ -6,6 +6,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.FurnaceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
@@ -15,6 +16,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.RegistryObject;
 import net.prayforwaifu.testmod.TestMod;
+import net.prayforwaifu.testmod.block.custom.SunstoneLampBlock;
 import net.prayforwaifu.testmod.block.custom.Sunstoneblock;
 import net.prayforwaifu.testmod.item.ModCreativeModeTab;
 import net.prayforwaifu.testmod.item.ModItems;
@@ -40,6 +42,16 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(1f, 1f)
                     .requiresCorrectToolForDrops().lightLevel((state) -> 4), UniformInt.of(3,7))
             , ModCreativeModeTab.TEST_MOD);
+
+    public static final RegistryObject<Block> SUN_FURNACE = registryBlock("sun_furnace",
+            () -> new FurnaceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(1f, 1f)
+                    .requiresCorrectToolForDrops().lightLevel((state) -> 4)), ModCreativeModeTab.TEST_MOD);
+
+    public static final RegistryObject<Block> SUNSTONE_LAMP= registryBlock("sunstone_lamp",
+            () -> new SunstoneLampBlock(BlockBehaviour.Properties.of(Material.STONE).strength(1f,1200f)
+                    .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(SunstoneLampBlock.LIT) ? 0 : 15))
+                            , ModCreativeModeTab.TEST_MOD);
+
 
 
     private static <T extends Block> RegistryObject<T> registryBlock(String name, Supplier<T> block, CreativeModeTab tab){
