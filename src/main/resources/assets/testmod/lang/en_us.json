@@ -7,10 +7,13 @@
   "item.testmod.amp_sunstone_dust": "Amplified sunstone dust",
   "item.testmod.amp_sunstone_ingot": "Amplified sunstone ingot",
   "item.testmod.fruit": "Fruit",
+  "item.testmod.crop_seed": "Blueberry seed",
+  "item.testmod.crop_fruit": "blueberry",
 
   "itemGroup.testmod": "SUNSTONE",
   "block.testmod.sunstone_block": "Sunstone block",
   "block.testmod.sunstone_ore": "Sunstone ore",
   "block.testmod.deepslate_sunstone_ore": "Deepslate sunstone ore",
-  "block.testmod.sunstone_lamp": "Sunstone lamp"
+  "block.testmod.sunstone_lamp": "Sunstone lamp",
+  "block.testmod.crop_block": "Crop block"
 }

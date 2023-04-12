@@ -1,6 +1,8 @@
 package net.prayforwaifu.testmod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -42,7 +44,8 @@ public class TestMod {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            //This is to make the empty spaces in the PNG see-through and now white
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.CROPBLOCK.get(), RenderType.cutout());
         }
     }
 }

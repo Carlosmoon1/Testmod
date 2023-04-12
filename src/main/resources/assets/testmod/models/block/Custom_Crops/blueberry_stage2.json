@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "testmod:block/Custom_Crops/blueberry_stage2"
+  }
+}
